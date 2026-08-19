@@ -6,7 +6,7 @@
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
-    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="true"/>
   </SyntheticProperties>
   <AuxValues>
     <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
@@ -23,12 +23,12 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jPanel1" max="32767" attributes="0"/>
-                  <Component id="jPanel5" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
                   <Component id="jPanel6" max="32767" attributes="0"/>
+                  <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
+                  <Component id="jPanel5" alignment="0" max="32767" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
@@ -41,9 +41,9 @@
               <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jPanel5" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="jPanel6" min="-2" pref="398" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jPanel6" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="30" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -105,39 +105,47 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="txfdUsuario" min="-2" max="-2" attributes="0"/>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="txfNome" min="-2" pref="244" max="-2" attributes="0"/>
-                              </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="txfPreco" min="-2" pref="244" max="-2" attributes="0"/>
                               </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="txfIdJogo" min="-2" pref="244" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="jLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace pref="109" max="32767" attributes="0"/>
+                          <EmptySpace pref="111" max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="1" attributes="0">
-                                  <Component id="jbEditar" min="-2" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Component id="jbLimpar" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jbEditar" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jbExcluir" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jbSair" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  </Group>
                                   <EmptySpace min="-2" pref="201" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jbLimpar" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jbExcluir" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jbSair" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jbCadastrar" min="-2" max="-2" attributes="0"/>
-                                  </Group>
+                                  <Component id="jbCadastrar" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
                       <Group type="102" attributes="0">
-                          <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="txfPlataforma" min="-2" pref="244" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
+                                  <Component id="txfPlataforma" min="-2" pref="244" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="txfNome" min="-2" pref="244" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       </Group>
                   </Group>
@@ -149,32 +157,39 @@
               <Group type="102" attributes="0">
                   <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="txfdUsuario" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jbCadastrar" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txfIdJogo" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel4" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
+                      <Component id="txfNome" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jbEditar" min="-2" max="-2" attributes="0"/>
-                      <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                          <Component id="jLabel4" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
-                          <Component id="txfNome" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <Component id="jbEditar" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                          <Component id="jbLimpar" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="jbExcluir" min="-2" max="-2" attributes="0"/>
                       </Group>
-                  </Group>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabel5" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
-                      <Component id="txfPlataforma" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jbLimpar" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabel6" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
-                      <Component id="txfPreco" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jbExcluir" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="txfPlataforma" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel5" alignment="0" min="-2" pref="32" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel6" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
+                              <Component id="txfPreco" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Component id="jbSair" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="68" max="32767" attributes="0"/>
+                  <EmptySpace pref="104" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -252,6 +267,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Editar"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbEditarActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="jbExcluir">
           <Properties>
@@ -266,6 +284,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Excluir"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbExcluirActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="jbLimpar">
           <Properties>
@@ -298,20 +319,6 @@
             <Property name="text" type="java.lang.String" value="Sair"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="txfdUsuario">
-          <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="66" red="ff" type="rgb"/>
-            </Property>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Segoe UI" size="12" style="1"/>
-            </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="0" type="rgb"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="ID:"/>
-          </Properties>
-        </Component>
         <Component class="javax.swing.JTextField" name="txfNome">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -333,6 +340,27 @@
             </Property>
           </Properties>
         </Component>
+        <Component class="javax.swing.JLabel" name="jLabel2">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="12" style="1"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="0" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="ID:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="txfIdJogo">
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="66" red="ff" type="rgb"/>
+            </Property>
+            <Property name="enabled" type="boolean" value="false"/>
+            <Property name="focusable" type="boolean" value="false"/>
+          </Properties>
+        </Component>
       </SubComponents>
     </Container>
     <Container class="javax.swing.JPanel" name="jPanel6">
@@ -345,15 +373,82 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jScrollPane1" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <EmptySpace min="0" pref="100" max="32767" attributes="0"/>
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="jScrollPane1" min="-2" pref="232" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="201" max="-2" attributes="0"/>
+              </Group>
           </Group>
         </DimensionLayout>
       </Layout>
+      <SubComponents>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTable" name="jtJogo">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="cc" green="33" red="ff" type="rgb"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="0" type="rgb"/>
+                </Property>
+                <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                  <Table columnCount="4" rowCount="4">
+                    <Column editable="false" title="ID" type="java.lang.Double"/>
+                    <Column editable="false" title="Nome" type="java.lang.Integer"/>
+                    <Column editable="false" title="Plaforma" type="java.lang.String"/>
+                    <Column editable="false" title="Pre&#xe7;o" type="java.lang.Double"/>
+                  </Table>
+                </Property>
+                <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                  <TableColumnModel selectionModel="0">
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                  </TableColumnModel>
+                </Property>
+                <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                  <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jtJogoMouseClicked"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
     </Container>
   </SubComponents>
 </Form>

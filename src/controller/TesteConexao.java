@@ -14,6 +14,6 @@ public class TesteConexao {
         JOptionPane.showMessageDialog(null, "Hora do Jogo Baby!");
 
         connection.close();
-        
+
     }
 }

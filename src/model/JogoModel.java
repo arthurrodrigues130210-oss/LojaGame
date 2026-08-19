@@ -1,9 +1,10 @@
-
 package model;
 
 import java.sql.Date;
+
 public class JogoModel {
-     private int idJogo;
+
+    private int idJogo;
     private String nome;
     private String plataforma;
     private double preco;
@@ -39,7 +40,5 @@ public class JogoModel {
     public void setPreco(double preco) {
         this.preco = preco;
     }
-    
-    
 
 }
